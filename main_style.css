@@ -1,0 +1,515 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    
+}
+.menu_btn{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.menu_btn .menu_wrap {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    
+}
+.menu_btn .menu_wrap .line{
+    width: 50%;
+    height: 1px;
+    display: block;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+}
+.menu_btn .menu_wrap .line1{
+    margin-top: calc(10% - 1px);
+}
+.menu_btn .menu_wrap .line2{
+    margin-top: calc(40% - 1px);
+}
+.menu_btn .menu_wrap .line3{
+    margin-top: calc(40% - 1px);
+}
+
+.hd {
+    width: 100%;
+    height: 60px;
+    background-color: #636363;
+    line-height: 60px;
+    position: fixed;
+    
+}
+.hd .hdwrap {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.hd .gnb {
+    width: 100%;
+    height: 100%;
+}
+.hd .gnb ul {
+    width: 100%;
+    height: 100%;
+}
+.hd .gnb .gnb_lst {
+    width: 16.6666666%;
+    float: left;
+    height: 100%;
+}
+.hd .gnb .gnb_lst a {
+    display: block;
+    text-align: center;
+    color:#f1f1f1;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+/*    border-bottom: 2px solid #f1f1f1;*/
+}
+/*
+.hd .gnb .gnb_lst:nth-child(1) a:nth-child(1){
+    border-bottom: 2px solid #f1f1f1;
+}*/
+
+.page {
+    width: 100%;
+    height: 100vh;
+}
+.page1 {
+    position: relative;
+}
+.page1 .slide_bnr {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.page1 .slide_box {
+    width: 400%;
+    height: 100%;
+}
+.page1 .slide_box .slide_lst {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+.page1 .slide_box .slide_lst:nth-child(1) {
+    background-image: url('./src/main_slide1.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: none;
+}
+.page1 .slide_box .slide_lst:nth-child(2) {
+    background-image: url('./src/main_slide2.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.page1 .slide_box .slide_lst:nth-child(3) {
+    background-image: url('./src/main_slide3.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.page1 .slide_box .slide_lst .inner_img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+.page1 .slide_box .slide_lst .inner_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.page1 .slide_box .slide_lst .inner_txt {
+    width: 900px;
+    margin: 0 auto;
+    line-height: 2.5;
+}
+.page1 .slide_box .slide_lst .inner_txt .title {
+    color: #f1f1f1;
+    font-family: 'seoul-namsan-jung-l';
+    display: block;
+    text-align: center;
+    font-size: 2.6rem;
+}
+.page1 .slide_box .slide_lst .inner_txt .title::after {
+    content: ''; 
+    width: 1000px; 
+    height: 1px ; 
+    background-color: #f1f1f1; 
+    margin: 0 auto; 
+    display: block; 
+    margin-bottom: 40px;
+}
+.page1 .slide_box .slide_lst .inner_txt .comment {
+    display: block;
+    text-align: center;
+    color:#e1e1e1;
+    font-size:1.1rem;
+}
+.page1 .slide_box .slide_lst .inner_txt a.link{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    box-sizing: border-box;
+    border:1px solid white;
+    border-radius: 15px;
+    color:#f1f1f1;
+    overflow: hidden;
+    z-index: 5;
+    transition: 0.5s;
+}
+.page1 .slide_box .slide_lst .inner_txt a.link + span {
+    width: 0px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: block;
+    margin-top: -25px;
+    z-index: 1;
+    background-color: #f1f1f1;
+    color:rgba(25,25,25,0);
+    line-height: 0px;
+    transition: 0.5s;
+    
+}
+.page1 .slide_box .slide_lst .inner_txt a.link:hover {
+    color:#363636;
+    border-color: #363636;
+}
+
+.page1 .slide_box .slide_lst .inner_txt a.link:hover + span {
+    line-height: 50px;
+    margin-top: -50Px;
+    width: 150px;
+}
+.page1 .slide_bnr .btn_box {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 50%;
+}
+.page1 .slide_bnr .btn_box span {
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    width: 80px;
+    box-sizing: border-box;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    transition: 1s;
+}
+@keyframes ani1 {
+    from {
+        width: 80px;
+    } 50% {
+        width: 95px;
+    } to {
+        w80px
+    }
+}
+.page1 .slide_bnr .btn_box span:hover {
+    animation: ani1 1.5s infinite;
+}
+.page1 .slide_bnr .btn_box .left {
+    background-image: url('./src/left.png');
+    float: left;
+    margin-left: -1px;
+}
+.page1 .slide_bnr .btn_box .right {
+    background-image: url('./src/right.png');
+    float: right;
+    margin-right: -1px;
+    background-position: top right;
+}
+.page1 .snb {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255,255,255, 0.3);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.page1 .snb .snb_wrap {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.snb_wrap ul {
+    width: 100%;
+    height: 100%;
+}
+.snb_wrap ul li {
+    width: 16.6666666%;
+    height: 100%;
+    line-height: 50px;
+    float: left;
+}
+.snb_wrap ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color:white;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* page2  */
+.page2 {
+    height: auto;
+    background-color: #f1f1f1;
+}
+.page2 .wraper {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+} 
+.page2 .text_box {
+    width: 100%;
+    height: auto;
+    line-height: 2.5;
+}
+.page2 .text_box .title {
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'seoul-hangang-jang-l';
+}
+
+.page2 .text_box .middle_text {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.page2 .text_box .middle_text::after {
+    content: '';
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    height: 1px;
+    background-color: #363636;
+    margin-top: 30px;
+}
+.page2 .text_box .comment {
+    font-family: 'seoul-hangang-jang-l';
+    padding-top: 20px;
+    font-size: 1rem;
+    text-indent: 20px;
+}
+#greeting > div > div > h3:nth-child(4) {
+    padding-bottom: 50px;
+}
+
+/* page3 */
+
+.page3 {
+    height: auto;
+}
+
+.page3 .wraper {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+.page3 .por_title {
+    font-family: 'seoul-hangang-jung-l';
+    font-size:3.5rem;
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+.page3 .card_box  {
+    width: 100%;
+    height: auto;
+}
+.page3 .card_box:last-child {
+    margin-bottom: 90px;
+}
+.page3 .card {
+    width: 300px;
+    min-height: 600px;
+    max-height: 700px;
+    float: left;
+    margin-right:30px;
+    overflow: hidden;
+}
+.page3 .card .img_box {
+    display: block;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-color:antiquewhite;;
+}
+.page3 .card .img_box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 1s;
+}
+.page3 .card:nth-child(3) {
+    margin-right: 0;
+}
+.page3 .card .text_box {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.page3 .card .title {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'seoul-namsan-jung-l';
+}
+.page3 .card .tools {
+    display: block;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 10px solid rgba(255,255,255, 0);
+}
+.page3 .card .exp {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: 3px solid #353535;
+    transition: 1s;
+    cursor: pointer;
+}
+.page3 .card .exp + span {
+    height: 50px;
+    width: 3px;
+    display: block;
+    background-color: #363636;
+    margin-left: 100px;
+    margin-top: -50px;
+    z-index: -1;
+    transition: 0.7s;
+}
+.page3 .card .exp:hover {
+    color : #f1f1f1;
+}
+.page3 .card .exp:hover + span {
+    width: 100px;
+}
+
+.page3 .card .link {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 20px;
+}
+
+.page3 li.cb {
+    clear: both;
+}
+
+
+
+
+/* page3 */
+
+.page4 {
+    min-height: 100%;
+    max-height:auto;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.page4 .txt_wrap {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+.page4 .txt_wrap .abil_title {
+    font-family: 'seoul-hangang-jung-l';
+    text-align: center;
+    display: block;
+    line-height: 2.5;
+    font-size: 3.5rem;
+}
+.page4 .txt_wrap .abil_title::after {
+    content: '';
+    width: 200px;
+    height: 1px;
+    background-color: #363636;
+    display: block;
+    margin: 0 auto;
+}
+.page4 .txt_wrap .abil_comment {
+    display: block;
+    
+    margin-top: 50px;
+    line-height: 2.5;
+    font-size:1rem;
+}
+.page4 .icon_box {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+}
+.page4 .icon_box .set {
+    width: 60px; 
+    height: 60px;
+    -webkit-background-size: auto 60px;
+    background-size: auto 60px;
+    clear: both;
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    background-position: center 0;;
+}
+.page4 .icon_box .html {
+    background-image: url('./src/html.png');
+}
+.page4 .icon_box .css {
+    background-image: url('./src/css.png');
+}
+.page4 .icon_box .js {
+    background-image: url('./src/js.png');
+}
+.page4 .icon_box .jqery {
+    background-image: url('./src/jq.png');
+}
+.page4 .icon_box .photo {
+    background-image: url('./src/pt.png');
+}
+
+
+
+
+
+
+
+
+
+
+
